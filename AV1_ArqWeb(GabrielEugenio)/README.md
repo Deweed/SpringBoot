@@ -18,7 +18,7 @@ Este projeto foi desenvolvido como parte de uma atividade avaliativa. Ele consis
 
 ## 📁 Estrutura do Projeto
 
-```bash
+```
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -118,5 +118,5 @@ spring:
 
 O projeto foi estruturado seguindo boas práticas de desenvolvimento Spring Boot e padrão REST. O uso do Lombok garantiu código mais limpo e enxuto, e a integração com o MySQL via XAMPP proporcionou um ambiente completo e de fácil replicação para avaliação e testes.
 
-# 👤 Autor
+## 👤 Autor
 Gabriel Eugênio
