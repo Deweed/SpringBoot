@@ -1,56 +1,122 @@
-# [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring" width="25"/>](https://spring.io/projects/spring-boot) Sistema Acadêmico - API Spring Boot
-Desenvolvida com Java 24 e utilizando o framework Spring Boot no back-end, esta aplicação representa uma estrutura acadêmica com foco nos relacionamentos entre alunos e cursos. A API permite o cadastro de cursos e alunos, além de possibilitar a associação de alunos aos respectivos cursos, simulando um cenário real de gerenciamento educacional.
+# 💻 Projeto Spring Boot - Relacionamento entre Entidades
 
-<br>
+Este projeto foi desenvolvido como parte de uma atividade avaliativa. Ele consiste na criação de uma aplicação Spring Boot com duas entidades relacionadas (ex: `Produto` e `Categoria` ou `Aluno` e `Curso`), com funcionalidades completas de CRUD e integração com banco de dados MySQL utilizando o XAMPP.
 
-## 🛠 Tecnologias usadas
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" width="35"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring" width="35"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mariadb" width="35"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="maven" width="35"/>
+---
 
-<br>
+## 🛠️ Tecnologias Utilizadas
 
-## ✅ Requisitos para executar
-- Java 24
-- Maven 3.6+
-- MariaDB 10.4+ (ou MySQL equivalente)
-- IDE (ex: IntelliJ, VSCode ou Eclipse)
-- Extensões VSCode: SpringBoot Extension Pack, Java Extension Pack
+- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- [Spring Boot 3.4.5](https://spring.io/projects/spring-boot)
+- [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+- [Lombok](https://projectlombok.org/)
+- [MySQL](https://www.mysql.com/) (via XAMPP)
+- [Postman](https://www.postman.com/) (para testes de API)
+- [Visual Studio Code](https://code.visualstudio.com/) (como IDE)
 
-<br>
+---
 
-## 📂 Estrutura do Projeto
-- `controllers/`: Contém os endpoints da API.
-- `model/`: Entidades JPA (Aluno, Curso).
-- `repository/`: Interfaces para acesso ao banco de dados.
-- `services/`: Lógica de negócio da aplicação.
-- `application.yml`: Configurações do banco de dados e JPA.
+## 📁 Estrutura do Projeto
 
-<br>
+```bash
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com.exemplo.api/
+│   │   │       ├── controller/
+│   │   │       ├── model/
+│   │   │       ├── repository/
+│   │   │       └── ApiApplication.java
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       └── ...
+└── pom.xml
+```
+## ⚙️ Configuração do Ambiente
 
-## ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) Configuração do MariaDB
-1. **Instalar o XAMPP [<img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" alt="xampp" width="15"/>](https://www.apachefriends.org/)**  
-   Faça o download XAMPP (pacote de softwares) [aqui](https://www.apachefriends.org/pt_br/download.html) e instale-o.
+1. Instalar o XAMPP
+- Baixe e instale o XAMPP.
+- Inicie o módulo MySQL no painel de controle do XAMPP.
 
-2. **Configurar o `application.yml`**  
-Abra o arquivo `application.yml` e insira as configurações de conexão com o banco MariaDB.
+2. Criar banco de dados
+Acesse o `phpMyAdmin` e crie um banco com o nome:
 
-3. **Iniciar o XAMPP**  
-   Execute o XAMPP e clique em "Start" em MySQL para executar o servidor de banco de dados locamente
+```
+CREATE DATABASE sistema_relacional;
+```
 
-4. **Criar o banco de dados no phpMyAdmin** 
-   Após startar o MySQL, o phpMyAdmin será aberto numa aba do navegador. Crie um banco de dados com o nome "apiav1_sistemaacademico", conforme o application.yml.
-   
-6. **Rodar a aplicação**  
-   Utilizando a extensão "Spring Boot Dashboard", clique no botão de Run, para startar a API em localhost:8080
+## 🧩 Entidades
 
-6. **Utilizar Postman ou Bruno**  
-   Instale a extensão do Postman no VSCode para fazer requisições à API. Confira no phpMyAdmin se os cadastros estão sendo realizados.
+O projeto utiliza duas entidades com relacionamento `@OneToMany` ou `@ManyToMany`. Exemplo:
 
-<br>
+- [x] `Produto` (id, nome, preco, descricao)
+- [x] `Categoria` (id, nome)
 
-## 🚀 Endpoints disponíveis
-* GET /alunos – Lista todos os alunos
-* POST /alunos – Cadastra um novo aluno
-* GET /cursos – Lista todos os cursos
-* POST /cursos – Cadastra um novo curso
+## 🔗 Relacionamento
 
-<br>
+Exemplo: Uma `Categoria` pode conter `muitos Produtos`.
+
+Configurado com anotações JPA (`@OneToMany`, `@ManyToOne`), com mapeamento de chaves estrangeiras automático pelo Hibernate.
+
+## 🧪 Testes com Postman
+
+Após iniciar a aplicação, use o Postman para testar os endpoints:
+
+
+| Método | Endpoint       | Descrição           |
+|--------|----------------|---------------------|
+| GET    | /produtos      | Listar produtos     |
+| POST   | /produtos      | Cadastrar produto   |
+| PUT    | /produtos/{id} | Atualizar produto   |
+| DELETE | /produtos/{id} | Remover produto     |
+
+
+## ▶️ Como Executar o Projeto
+
+1. Clone o repositório:
+```
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+2. Abra no VS Code e execute:
+Certifique-se de que o MySQL do XAMPP esteja rodando, e depois:
+
+```
+./mvnw spring-boot:run
+```
+
+## 🧾 Exemplo de application.yml
+```
+yaml
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sistema_relacional?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+```
+
+## ✅ Requisitos Atendidos
+
+- [x] Relacionamento funcional no MySQL
+- [x] CRUD completo para ambas as entidades
+- [x] Lombok utilizado em todas as classes
+- [x] Testes com Postman
+- [x] Organização em camadas (Controller, Repository, Model)
+
+
+## 📝 Conclusão
+
+O projeto foi estruturado seguindo boas práticas de desenvolvimento Spring Boot e padrão REST. O uso do Lombok garantiu código mais limpo e enxuto, e a integração com o MySQL via XAMPP proporcionou um ambiente completo e de fácil replicação para avaliação e testes.
+
+# 👤 Autor
+Gabriel Eugênio
