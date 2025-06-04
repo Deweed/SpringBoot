@@ -8,3 +8,13 @@
 Este diretório reúne os projetos desenvolvidos em <b>Spring Boot</b> durante as aulas de Desenvolvimento de Dispositivos Web. 
 Cada projeto é uma aplicação prática dos conceitos e arquiteturas aprendidos, visando construir sistemas robustos e eficientes.
 </p>
+
+## 📂 Projetos
+>Aqui estão os projetos desenvolvidos até o momento:
+
+### 📱 AV1 - Relacionamento entre Entidades:
+
+Este projeto foi desenvolvido como parte de uma atividade avaliativa. Ele consiste na criação de uma aplicação Spring Boot com duas entidades relacionadas (ex: `Produto` e `Categoria` ou `Aluno` e `Curso`), com funcionalidades completas de CRUD e integração com banco de dados MySQL utilizando o XAMPP.
+
+----
+
