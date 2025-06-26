@@ -1,8 +1,8 @@
 <h1>AutentAutorJWT - API de Segurança com Spring Boot e JWT</h1>
 
-Este repositório contém uma implementação robusta de um sistema de autenticação e autorização para APIs REST, construído com o ecossistema Spring Boot. O projeto utiliza JSON Web Tokens (JWT) para garantir o controle de acesso seguro aos endpoints.
+>Este repositório contém uma implementação robusta de um sistema de autenticação e autorização para APIs REST, construído com o ecossistema Spring Boot. O projeto utiliza JSON Web Tokens (JWT) para garantir o controle de acesso seguro aos endpoints.
 
-A arquitetura foi projetada para ser um ponto de partida claro e funcional para aplicações que necessitam de um módulo de segurança, incluindo um banco de dados em memória para testes e documentação interativa da API.
+>A arquitetura foi projetada para ser um ponto de partida claro e funcional para aplicações que necessitam de um módulo de segurança, incluindo um banco de dados em memória para testes e documentação interativa da API.
 
 <h2>🛠️ Tecnologias Utilizadas</h2>
 Este projeto é desenvolvido com um conjunto de tecnologias modernas e eficientes:
@@ -88,6 +88,6 @@ Para facilitar o desenvolvimento, o projeto utiliza um banco de dados H2 que rod
 
 <h2>✅ Pré-requisitos</h2>
 
-Java Development Kit (JDK): Versão 17 ou mais recente.
-Apache Maven: Versão 3.8 ou superior.
-Um cliente de API (como Postman ou Insomnia) ou o próprio Swagger UI para testar os endpoints.
+1. <b>Java Development Kit (JDK):</b> Versão 17 ou mais recente.
+2. <b>Apache Maven:</b> Versão 3.8 ou superior.
+3. Um cliente de API (como Postman ou Insomnia) ou o próprio Swagger UI para testar os endpoints.
