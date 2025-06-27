@@ -1,0 +1,16 @@
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\Av2Application.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\config\SecurityConfig.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\config\SwaggerConfig.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\controller\AlunosController.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\controller\AuthController.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\controller\CursosController.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\model\Alunos.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\model\Cursos.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\model\User.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\repository\AlunosRepository.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\repository\CursosRepository.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\repository\UserRepository.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\service\AlunosService.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\service\AuthService.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\service\CursosService.java
+C:\Users\gamer\Downloads\arquiteturaweb_AV2-main\AV2-AeutentAutorJWT\src\main\java\com\example\av2\service\JwtService.java
