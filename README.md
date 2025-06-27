@@ -18,3 +18,9 @@ Este projeto foi desenvolvido como parte de uma atividade avaliativa. Ele consis
 
 ----
 
+### 🛡️ AV2 - Autenticação e Autorização com JWT:
+
+Este projeto, correspondente à AV2, aprofunda os conceitos de segurança em APIs REST. O foco principal é a implementação de um sistema completo de autenticação e autorização utilizando **JSON Web Tokens (JWT)**. A aplicação protege endpoints **CRUD** com base em papéis de usuário (`roles`), utiliza **Spring Security 6** e o módulo **OAuth2 Resource Server** para validação dos tokens. Além da segurança, o projeto engloba a documentação da API com **Swagger**, monitoramento com **Actuator** e **Prometheus**, testes de carga com **JMeter** e o processo de deploy com **Docker**.
+
+----
+
